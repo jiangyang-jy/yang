@@ -27,9 +27,3 @@ def cnblog_fabu(i):
 if __name__ == '__main__':
     for i in range(5211310, 5211315):
         cnblog_fabu(i)
-
-
-
-
-
-
