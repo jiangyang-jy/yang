@@ -11,6 +11,7 @@ def login(s, usr, pwd):
     r1 = s.post(url1, json=body)
     print(r1.json())
     return r1.json()["data"]["token"]
+    #return r1.json().get("data").get("token")不同的方式
 
 
 def login_assets(s):
