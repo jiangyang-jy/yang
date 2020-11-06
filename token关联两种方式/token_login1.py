@@ -9,6 +9,7 @@ def login(s, usr, pwd):
         "password": pwd
     }
     r1 = s.post(url1, json=body)
+    #r1 = s.post(url1, json=json.dumps(body)) dumps是转字符串的，也可以说json；loads是转dict；
     print(r1.json())
     return r1.json()["data"]["token"]
     #return r1.json().get("data").get("token")不同的方式
