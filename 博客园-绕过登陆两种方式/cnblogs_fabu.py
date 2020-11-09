@@ -30,6 +30,41 @@ if __name__ == '__main__':
 
 
 
+"""优化了第一种方式"""
+import requests
+import urllib3
+
+urllib3.disable_warnings()
+s = requests.session()
+s.verify = False
+
+
+def cnblog_fabu(i):
+    url = "https://home.cnblogs.com/ajax/ing/Publish"
+    #直接把cookie更新到头部
+    h = {
+        "Cookie": ".Cnblogs.AspNetCore.Cookies=CfDJ8AHUmC2ZwXVKl7whpe9_las_6wIcBtkx2le7cxiKordBwRZqNABuLS5vWh9JyQjO0N1HNFz796Z6fu0mVPTblPpCwGRqItllPaMUqt7hkvoQz0fESLzMTUsQomNb4op-MpI7HeIj2R3b2cf-GXRKWCz4emafz2gPXMe4IKpuq1UPD586KIIm42xYB_u-ZZxcbNYHbRymB_wVss1lOBTsAvOyGG95xdJ_OAmBs2M7D2CspiSHmfAvh-r17APQA4kGWWF24P8UuB-rBvo4rr0D3XceVHlzcXfsG8i3jSSvaQcb40eyuHOC5ilPPaD---oiCRdsvBtYk09572Er7MAv5qkaJOB7b0JfWcEZNfhNlkGuTOA2C2FJAfcKiFADF8w2OhuMIW3vVM7544CSZywnf8ujAoTwEBkrUIsI5rKlf-zOjqaFX8C7-te5PU5k3f05u981OgltAU-7QOJxhbbdzXVxiOyHudu5B2n4RE4x_2OGnoN2pvSKR7UifXrXP61xL6q8gA_UvTdf357ELtUHrjBoFmtRvScnM_b4VPLagZB5RrVLkD49_STrMHpL8vsNpA"
+    }
+    # s.headers.update(h)
+    body = {
+        "content": i,
+        "publicFlag": 1
+    }
+    r = s.post(url, json=body, headers=h)
+    print(r.json())
+
+
+if __name__ == '__main__':
+    for i in range(5211316, 5211318):
+        cnblog_fabu(i)
+
+
+
+
+
+
+
+
 
 
 
