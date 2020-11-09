@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
 
 
-"""优化了第一方式"""
+"""优化了第一种方式"""
 import requests
 import urllib3
 
@@ -57,14 +57,4 @@ def cnblog_fabu(i):
 if __name__ == '__main__':
     for i in range(5211316, 5211318):
         cnblog_fabu(i)
-
-
-
-
-
-
-
-
-
-
 
