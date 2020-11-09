@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
 
 
-"""优化了第一种方式"""
+"""优化了第一方式"""
 import requests
 import urllib3
 
