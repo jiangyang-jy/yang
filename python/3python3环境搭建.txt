@@ -1,0 +1,5 @@
+Python环境搭建
+
+***python可以应用于多平台包括Linux和Mac OS X；
+***MAC系统一般都有自带python2.x版本的环境；
+***集成开发环境IDE;如pycharm；
