@@ -1,0 +1,4 @@
+Python3 条件控制
+
+***python中用elif代替了else if，所以if语句的关键字为：if-elif-else
+***if嵌套
