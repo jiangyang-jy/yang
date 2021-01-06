@@ -15,4 +15,5 @@ This tool is used to add user to access adminer
 Account: root
 Password: root123
 
-七、到阿里云服务器开放9095端口；
+七、到阿里云后台开放9095端口；
+
