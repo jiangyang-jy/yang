@@ -1,0 +1,11 @@
+Python3 File方法
+
+***python中open（）方法用于打开一个文件，并返回文件对象；
+***使用open（）方法一定要保证关闭文件对象，即调用close（）方法；
+***open（file, mode="a"）
+***mode参数有：b二进制模式；r只读方式打开文件；w用于写；a追加的方式；
+
+一、file对象
+***file.close()关闭文件；
+***file.read()读取文件；
+***file.write（）写入文件
