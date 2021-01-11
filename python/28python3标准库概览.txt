@@ -1,0 +1,17 @@
+Python3标准库概览
+
+一、操作系统接口
+***os模块提供了不少与操作系统相关联的函数；
+***os.getcwd()能查看当前目录
+
+二、文件通配符
+***glob.glob（'*.py'）查看当前目录所有的py文件；
+
+三、数据压缩
+***import zlib
+s = b"12345678901234567890"
+print(len(s))>>>20
+t = zlib.compress(s)
+print(len(t))>>>11
+
+
