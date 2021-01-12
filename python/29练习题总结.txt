@@ -1,0 +1,9 @@
+***list = [1, 2, 3, 4, 5]
+print（list[-1：]）
+>>5
+解释：只有步长的正负，决定方向；比如a[：：-1]，-1才是决定方向的那个。
+
+***def f（）：pass
+print（type（f（）））
+>><class 'NoneType'>
+解释：函数f（）没有返回值，所以为None，，如果返回值为return 10，那么类型为<class 'int'>
