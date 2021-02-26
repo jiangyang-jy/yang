@@ -1,16 +1,15 @@
-test_login_1:
-   -
-      -  device_type: Android
-         device_number: 3517033688244
-         mobile: 19842314796
-         code: qQ123456
-      -  msg: dev_登录成功
-   -
-      -  device_type: ios
-         device_number: 3517033688244
-         mobile: 19842314796
-         code: qQ123456
-      -  msg: dev_登录成功
+-
+  -  device_type: Android
+     device_number: 3517033688244
+     mobile: 19842314796
+     code: qQ123456
+  -  msg: dev_登录成功
+-
+  -  device_type: ios
+     device_number: 3517033688244
+     mobile: 19842314796
+     code: qQ123456
+  -  msg: dev_登录成功
 
 
 
