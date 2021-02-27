@@ -23,7 +23,7 @@ DELETE FROM student WHERE id=1005;
 //删除指定列
 ALTER TABLE student DROP mobile;
 //清空指定表
-DELETE FROM student;
+DELETE FROM student; 
 //清空指定表，执行效率高
 TRUNCATE TABLE student;#truncate只能清空表，速度比delete块，但是不能一行一行删除；
 //删除表格
@@ -48,6 +48,16 @@ SELECT age FROM student;
 SELECT * FROM student WHERE id=1001;
 //查询表格指定多行
 SELECT * FROM student WHERE id IN (1001,1003,1005);
+//模糊查询like
+SELECT * FROM student WHERE NAME LIKE "%张%";
 #----------------------------上面内容皆为单表操作；
 
-
+//两表内连接
+SELECT * FROM student JOIN grade ON student.`id`=grade.`id`;
+//两表左连接
+SELECT * FROM student LEFT JOIN grade ON student.`id`=grade.`id`;
+//两表右连接
+SELECT * FROM student RIGHT JOIN grade ON student.`id`=grade.`id`;
+//两表选择指定列显示
+SELECT student.`id`,student.`name`,student.`age`,grade.`kemu`,grade.`score` FROM student JOIN grade ON student.`id`=grade.`id`;
+#----------------------------上面内容皆为多表操作
