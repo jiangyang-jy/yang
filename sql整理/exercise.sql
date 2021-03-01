@@ -66,5 +66,8 @@ SELECT * FROM student WHERE Sname LIKE "%华%";
 //查询并统计同龄学生人数
 SELECT sage,COUNT(Sid) FROM student GROUP BY sage;
 //查询每门课程的平均成绩，结果按平均成绩升序排列，平均成绩相同时，按课程号降序排列
-
+SELECT Cid,AVG(Cscore) FROM grade GROUP BY Cid ORDER BY AVG(Cscore),cid DESC;
 //按平均成绩从高到低显示所有学生的平均成绩
+SELECT Sid,AVG(Cscore) FROM grade GROUP BY Sid ORDER BY AVG(Cscore) DESC;
+//按各科平均成绩从低到高顺序排序
+SELECT Cid,AVG(Cscore) FROM grade GROUP BY Cid ORDER BY AVG(Cscore) ASC;
