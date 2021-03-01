@@ -61,3 +61,8 @@ SELECT * FROM student RIGHT JOIN grade ON student.`id`=grade.`id`;
 //两表选择指定列显示
 SELECT student.`id`,student.`name`,student.`age`,grade.`kemu`,grade.`score` FROM student JOIN grade ON student.`id`=grade.`id`;
 #----------------------------上面内容皆为多表操作
+
+//GROUP by分组
+//ORDER by排序
+//avg平均数、count统计个数
+#----------------------------上面内容皆为常用
