@@ -1,0 +1,27 @@
+一、fiddler配置
+（1）fiddler工作原理
+终端设备（web、app）发出请求，fiddler作为代理，传给服务器；服务器返回数据，fiddler拦截后，再传给终端设备；
+
+（2）自定义会话框，查看get和post请求
+鼠标放在#后面右击，选择Miscellaneous，再选择RequestMethod；
+
+（3）火狐浏览器https请求需要导入证书；
+chrome浏览器不用导入；
+
+（4）手机wifi设置代理
+手机设置-wifi-找到当前连接的网络（跟电脑是同一局域网）；
+fiddler设置允许远程设备连接；
+cmd输入ipconfig查看ipv4地址；
+
+（5）抓app上https请求，教程：http://www.cnblogs.com/yoyoketang/p/6582437.html
+
+（6）设置过滤设备
+...from all processes:抓所有的请求
+...from browsers only ：只抓浏览器的请求 
+...from non-browsers only :只抓非浏览器的请求 
+...from remote clients only:只抓远程客户端（手机app）请求
+
+
+二、打断点
+请求断点：可以修改请求参数，绕过前端请求；
+响应断点：可以修改返回内容；
